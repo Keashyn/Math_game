@@ -1,5 +1,5 @@
 # Math_game
-CP3046 Education Game Task 2
+CP3046 Task 2 Education Game 
 
 App Features :
 Realtime Gameplay
