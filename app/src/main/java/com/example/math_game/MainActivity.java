@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
                 Share.startAnimation(bonce);
                 Intent shares = new Intent(android.content.Intent.ACTION_SEND);
                 shares.setType("text/plain");
-                String shareBody = "Download Math POP! for free now!!! , COPY HERE : "+"https://drive.google.com/file/d/1zSYyBjWiTAjgoWuo1FEkE5_t8u5hd5CN/view?usp=sharing";
+                String shareBody = "Download Math POP! for free now!!!";
                 shares.putExtra(android.content.Intent.EXTRA_SUBJECT, "Math POP!");
                 shares.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
                 startActivity(Intent.createChooser(shares, "Share via"));
