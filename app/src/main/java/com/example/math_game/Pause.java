@@ -18,9 +18,12 @@ public class Pause extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pause);
 
-        ConstraintLayout background = (ConstraintLayout)findViewById(R.id.backgr);
-        final ImageButton Back = (ImageButton)findViewById(R.id.bekhome);
-        final Button Contine = (Button)findViewById(R.id.continues);
+        ConstraintLayout background =
+                findViewById(R.id.backgr);
+        final ImageButton Back =
+                findViewById(R.id.bekhome);
+        final Button Contine =
+                findViewById(R.id.continues);
 
         background.getBackground().setAlpha(150);
 

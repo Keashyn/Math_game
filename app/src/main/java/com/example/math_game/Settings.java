@@ -23,15 +23,24 @@ public class Settings extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
-        final ImageButton Back = (ImageButton) findViewById(R.id.backt);
-        final ImageButton Bg_voice = (ImageButton) findViewById(R.id.bg_voice);
-        final ImageButton Sfx_voice = (ImageButton) findViewById(R.id.sfx_voice);
-        SeekBar Bg_sound = (SeekBar)findViewById(R.id.bg_sound);
-        SeekBar Sfx_sound = (SeekBar)findViewById(R.id.sfx_sound);
-        final EditText Player_name = (EditText) findViewById(R.id.Pname);
-        Button Pname_apply = (Button)findViewById(R.id.PnameApply);
-        final RadioGroup Choice = (RadioGroup)findViewById(R.id.buble_choice);
-        Button Choice_apply = (Button)findViewById(R.id.Choice_apply);
+        final ImageButton Back =
+                findViewById(R.id.backt);
+        final ImageButton Bg_voice =
+                findViewById(R.id.bg_voice);
+        final ImageButton Sfx_voice =
+                findViewById(R.id.sfx_voice);
+        SeekBar Bg_sound =
+                findViewById(R.id.bg_sound);
+        SeekBar Sfx_sound =
+                findViewById(R.id.sfx_sound);
+        final EditText Player_name =
+                findViewById(R.id.Pname);
+        Button Pname_apply =
+                findViewById(R.id.PnameApply);
+        final RadioGroup Choice =
+                findViewById(R.id.buble_choice);
+        Button Choice_apply =
+                findViewById(R.id.Choice_apply);
         final Animation bonce = AnimationUtils.loadAnimation(this, R.anim.bounce);
 
         SharedPreferences preferences = getSharedPreferences("Pref", MODE_PRIVATE);
@@ -160,16 +169,20 @@ public class Settings extends AppCompatActivity {
         });
 
         if(choice==0){
-            RadioButton normalBub = (RadioButton)findViewById(R.id.but1);
+            RadioButton normalBub =
+                    findViewById(R.id.but1);
             normalBub.setChecked(true);
         }else if(choice == 1){
-            RadioButton normalBub = (RadioButton)findViewById(R.id.but2);
+            RadioButton normalBub =
+                    findViewById(R.id.but2);
             normalBub.setChecked(true);
         }else if(choice == 2){
-            RadioButton normalBub = (RadioButton)findViewById(R.id.but3);
+            RadioButton normalBub =
+                    findViewById(R.id.but3);
             normalBub.setChecked(true);
         }else {
-            RadioButton normalBub = (RadioButton)findViewById(R.id.but4);
+            RadioButton normalBub =
+                    findViewById(R.id.but4);
             normalBub.setChecked(true);
         }
 

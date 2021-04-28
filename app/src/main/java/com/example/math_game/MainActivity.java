@@ -29,14 +29,22 @@ public class MainActivity extends AppCompatActivity {
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        final Button Exit = (Button)findViewById(R.id.Exit_but);
-        final Button Play = (Button)findViewById(R.id.Play);
-        final Button LBoard = (Button)findViewById(R.id.Leaderboard);
-        final Button Difficulties = (Button)findViewById(R.id.Difficulties);
-        final ImageButton Share = (ImageButton)findViewById(R.id.share);
-        final ImageButton Settg = (ImageButton)findViewById(R.id.setting);
-        final ImageButton Voise = (ImageButton)findViewById(R.id.voise);
-        final ImageButton Qmark = (ImageButton)findViewById(R.id.qmark);
+        final Button Exit =
+                findViewById(R.id.Exit_but);
+        final Button Play =
+                findViewById(R.id.Play);
+        final Button LBoard =
+                findViewById(R.id.Leaderboard);
+        final Button Difficulties =
+                findViewById(R.id.Difficulties);
+        final ImageButton Share =
+                findViewById(R.id.share);
+        final ImageButton Settg =
+                findViewById(R.id.setting);
+        final ImageButton Voise =
+                findViewById(R.id.voise);
+        final ImageButton Qmark =
+                findViewById(R.id.qmark);
 
         final Animation bonce = AnimationUtils.loadAnimation(this, R.anim.bounce);
         Bounce interpolator = new Bounce(0.2, 20);

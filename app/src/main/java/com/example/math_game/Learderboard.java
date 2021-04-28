@@ -17,8 +17,10 @@ public class Learderboard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_leaderboard);
 
-        ImageButton back = (ImageButton) findViewById(R.id.back);
-        ListView Score = (ListView)findViewById(R.id.scores);
+        ImageButton back =
+                findViewById(R.id.back);
+        ListView Score =
+                findViewById(R.id.scores);
 
         SimpleDatabase db;
         db = new SimpleDatabase(this);
@@ -40,7 +42,7 @@ public class Learderboard extends AppCompatActivity {
             }else{
                 int count = 0;
                 for (int points : myArray) {
-                    ranking.add(String.format(Locale.getDefault(), "%1$2s.  %2$3s ", Integer.toString(enumerator),myName.get(count)+" : "+ Integer.toString(points)));
+                    ranking.add(String.format(Locale.getDefault(), "%1$2s.  %2$3s ", enumerator,myName.get(count)+" : "+ points ));
                     enumerator++;
                     count++;
                 }
@@ -48,7 +50,7 @@ public class Learderboard extends AppCompatActivity {
             }
         } else {
             for(int x = 0 ; x<5 ; x++){
-                ranking.add(String.format(Locale.getDefault(), "%1$2s.  %2$3s ", Integer.toString(enumerator),myName.get(x)+" : "+ Integer.toString(myArray.get(x))));
+                ranking.add(String.format(Locale.getDefault(), "%1$2s.  %2$3s ", enumerator,myName.get(x)+" : "+ myArray.get ( x ) ));
                 enumerator++;
             }
         }

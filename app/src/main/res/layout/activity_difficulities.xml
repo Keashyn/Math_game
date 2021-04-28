@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Difficulties"
-    android:background="@drawable/bg"
-    >
+    android:background="@drawable/bg">
 
 
     <ImageButton
@@ -90,6 +89,7 @@
             android:text="Easy"
             android:textColor="#F8F5F5"
             android:textSize="30dp" />
+
         <Button
             android:id="@+id/medium"
             android:layout_margin="10dp"
@@ -103,6 +103,7 @@
             android:text="Medium"
             android:textColor="#F8F5F5"
             android:textSize="30dp" />
+
         <Button
             android:id="@+id/hard"
             android:layout_margin="10dp"
@@ -118,8 +119,6 @@
             android:textSize="30dp" />
 
     </LinearLayout>
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

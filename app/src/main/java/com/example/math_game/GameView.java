@@ -24,36 +24,54 @@ public class GameView extends SurfaceView implements Runnable {
     private Thread thread;
     private boolean isplay;
     public boolean gameover = false; // for the time
-    private int ScreenX,ScreenY;
+    private final int ScreenX;
+    private final int
+            ScreenY;
     public static float screenratX,screenratY;
-    private Paint paint;
-    private SoundPool soundPool;
-    private int sound,sound1,sound2,soundbon1,soundbon2,soundbon3,soundblockarea,soundEnd;
-    private Background background1,background2;
+    private final Paint paint;
+    private final SoundPool soundPool;
+    private final int sound;
+    private final int
+            sound1;
+    private final int
+            sound2;
+    private final int
+            soundbon1;
+    private final int
+            soundbon2;
+    private final int
+            soundbon3;
+    private final int
+            soundblockarea;
+    private final int
+            soundEnd;
+    private final Background background1;
+    private final Background
+            background2;
     public int SCORE = 0;
 
-    private String [] TrueQuestPlus = {
+    private final String [] TrueQuestPlus = {
             "5+2 = 7",
             "9+4 = 13",
             "7+2 = 9",
             "5+7 = 12",
             "2+5 = 7",
     };
-    private String [] TrueQuestMin = {
+    private final String [] TrueQuestMin = {
             "3-2 = 1",
             "6-4 = 2",
             "8-2 = 6",
             "7-5 = 2",
             "2-5 = -3",
     };
-    private String [] TrueQuestTimes = {
+    private final String [] TrueQuestTimes = {
             "6*6 = 36",
             "7*4 = 28",
             "7*0 = 0",
             "5*7 = 35",
             "2*5 = 10",
     };
-    private String [] TrueQuestDiv = {
+    private final String [] TrueQuestDiv = {
             "9/3 = 3",
             "28/4 = 7",
             "8/2 = 4",
@@ -61,7 +79,7 @@ public class GameView extends SurfaceView implements Runnable {
             "10/5 = 2",
     };
 
-    private String [] FalseQuestPlus = {
+    private final String [] FalseQuestPlus = {
             "4+2 = 7",
             "11+4 = 14",
             "6+2 = 9",
@@ -69,7 +87,7 @@ public class GameView extends SurfaceView implements Runnable {
             "1+5 = 9",
     };
 
-    private String [] FalseQuestMin = {
+    private final String [] FalseQuestMin = {
             "2-2 = 1",
             "4-4 = -1",
             "8-2 = -6",
@@ -77,7 +95,7 @@ public class GameView extends SurfaceView implements Runnable {
             "12-5 = 6",
     };
 
-    private String [] FalseQuestTimes = {
+    private final String [] FalseQuestTimes = {
             "6*6 = 26",
             "5*4 = 24",
             "7*0 = 7",
@@ -85,7 +103,7 @@ public class GameView extends SurfaceView implements Runnable {
             "3*5 = 13",
     };
 
-    private String [] FalseQuestDiv = {
+    private final String [] FalseQuestDiv = {
             "6/3 = 3",
             "4/4 = 0",
             "18/2 = 8",
@@ -94,11 +112,11 @@ public class GameView extends SurfaceView implements Runnable {
     };
 
     Rect Tap;
-    private Bubble[] bubble;
-    private Bonus bonuscontainer;
-    private Block block =  new Block(getResources());
-    private Block blockcontainer;
-    private Random random;
+    private final Bubble[] bubble;
+    private final Bonus bonuscontainer;
+    private final Block block =  new Block(getResources());
+    private final Block blockcontainer;
+    private final Random random;
     Runnable runnable;
     private int SFX_VOLUME;
     private int posX = 200;
@@ -257,11 +275,7 @@ public class GameView extends SurfaceView implements Runnable {
 
                 int truenot = random.nextInt((1-0)+1)+0;
 
-                if(truenot == 0){
-                    bubble.setBubstat(true);
-                }else{
-                    bubble.setBubstat(false);
-                }
+                bubble.setBubstat( truenot == 0 );
 
                 bubble.setText(QuestionRandomizer(bubble.isBubstat()));
 

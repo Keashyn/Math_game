@@ -25,13 +25,19 @@ public class GameOver extends AppCompatActivity {
         Bounce interpolator = new Bounce(0.2, 20);
         bonce.setInterpolator(interpolator);
 
-        ConstraintLayout ConsLayout = (ConstraintLayout) findViewById(R.id.croslau);
-        final Button back = (Button)findViewById(R.id.backo);
-        final Button leaderboard = (Button)findViewById(R.id.Leaderboard);
-        final Button playagain = (Button)findViewById(R.id.plei);
+        ConstraintLayout ConsLayout =
+                findViewById(R.id.croslau);
+        final Button back =
+                findViewById(R.id.backo);
+        final Button leaderboard =
+                findViewById(R.id.Leaderboard);
+        final Button playagain =
+                findViewById(R.id.plei);
 
-        TextView current_score = (TextView)findViewById(R.id.Current);
-        TextView HIGHEST_score = (TextView)findViewById(R.id.HIGH);
+        TextView current_score =
+                findViewById(R.id.Current);
+        TextView HIGHEST_score =
+                findViewById(R.id.HIGH);
 
         ConsLayout.getBackground().setAlpha(150);
 

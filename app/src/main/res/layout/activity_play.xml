@@ -7,8 +7,8 @@
     tools:context=".Settings"
     android:background="@drawable/transparent"
     android:theme="@android:style/Theme.Translucent"
-    android:id="@+id/croslau"
-    >
+    android:id="@+id/croslau">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:background="@drawable/oldmenu"
         android:layout_width="500dp"
@@ -37,8 +37,7 @@
                     android:text="Your Score: "
                     android:textStyle="bold"
                     android:textSize="25dp"
-                    android:textColor="#FFF"
-                    />
+                    android:textColor="#FFF" />
 
                 <TextView
                     android:id="@+id/Current"
@@ -122,7 +121,6 @@
                 android:textSize="22dp"
                 android:textStyle="bold" />
         </LinearLayout>
-
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

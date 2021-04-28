@@ -19,11 +19,16 @@ public class Difficulties extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_difficulities);
 
-        ImageButton back = (ImageButton) findViewById(R.id.back);
-        final Button Easy = (Button)findViewById(R.id.easy);
-        final Button Medium = (Button)findViewById(R.id.medium);
-        final Button Hard = (Button)findViewById(R.id.hard);
-        final TextView diff = (TextView)findViewById(R.id.textViewso);
+        ImageButton back =
+                findViewById(R.id.back);
+        final Button Easy =
+                findViewById(R.id.easy);
+        final Button Medium =
+                findViewById(R.id.medium);
+        final Button Hard =
+                findViewById(R.id.hard);
+        final TextView diff =
+                findViewById(R.id.textViewso);
 
         Difficulties = 1;
 
